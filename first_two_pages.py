@@ -21,11 +21,11 @@ for objects in names:
     x = open(objects,"rb")
     files.append(x)
 
-#add first pages to input
+# add first two pages to input
 for i in files:
     merger.append(fileobj = i, pages = (0,1))
 
-# Write to an output PDF document
+# write to an output PDF document
 output = open("two_pages.pdf", "wb")
 merger.write(output)
 
